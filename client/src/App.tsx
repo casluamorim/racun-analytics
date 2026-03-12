@@ -16,6 +16,7 @@ import Settings from "./pages/portal/Settings";
 import MetaIntegration from "./pages/portal/MetaIntegration";
 import GoogleAdsIntegration from "./pages/portal/GoogleAdsIntegration";
 import SyncMonitor from "./pages/portal/SyncMonitor";
+// import AIInsights from "./pages/portal/AIInsights"; // TODO: Fix type errors
 
 function Router() {
   // Public and private routes
@@ -36,6 +37,7 @@ function Router() {
       <Route path={"/portal/crm"} component={CRM} />
       <Route path={"/portal/reports"} component={Reports} />
       <Route path={"/portal/settings"} component={Settings} />
+      {/* <Route path={"/portal/ai-insights"} component={AIInsights} /> */}
 
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
