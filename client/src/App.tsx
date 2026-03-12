@@ -15,6 +15,7 @@ import Reports from "./pages/portal/Reports";
 import Settings from "./pages/portal/Settings";
 import MetaIntegration from "./pages/portal/MetaIntegration";
 import GoogleAdsIntegration from "./pages/portal/GoogleAdsIntegration";
+import SyncMonitor from "./pages/portal/SyncMonitor";
 
 function Router() {
   // Public and private routes
@@ -31,6 +32,7 @@ function Router() {
       <Route path={"/portal/integrations"} component={Integrations} />
       <Route path={"/portal/integrations/meta"} component={MetaIntegration} />
       <Route path={"/portal/integrations/google-ads"} component={GoogleAdsIntegration} />
+      <Route path={"/portal/sync-monitor"} component={SyncMonitor} />
       <Route path={"/portal/crm"} component={CRM} />
       <Route path={"/portal/reports"} component={Reports} />
       <Route path={"/portal/settings"} component={Settings} />

@@ -71,9 +71,9 @@
 - [x] Buscar campanhas (syncCampaigns)
 - [x] Buscar métricas (investimento, impressões, cliques, conversões, ROAS)
 - [x] Criar testes de conexão (metaAdsService.test.ts)
-- [ ] Implementar sincronização automática com job scheduler
+- [x] Implementar sincronização automática com job scheduler (IntegrationSyncManager)
+- [x] Criar página de integração no portal (MetaIntegration.tsx)
 - [ ] Integrar com banco de dados (salvar campanhas e métricas)
-- [ ] Criar página de integração no portal (MetaIntegration.tsx)
 
 ### Google Ads
 - [x] Implementar OAuth com Google (getAuthUrl, handleCallback, refreshToken)
@@ -82,9 +82,9 @@
 - [x] Buscar palavras-chave (getCampaignKeywords)
 - [x] Buscar performance (getCampaignMetrics, getAccountMetrics)
 - [x] Criar testes de conexão (googleAdsService.test.ts)
-- [ ] Implementar sincronização automática com job scheduler
+- [x] Implementar sincronização automática com job scheduler (IntegrationSyncManager)
+- [x] Criar página de integração no portal (GoogleAdsIntegration.tsx)
 - [ ] Integrar com banco de dados (salvar campanhas e métricas)
-- [ ] Criar página de integração no portal (GoogleAdsIntegration.tsx)
 
 ### TikTok Ads
 - [ ] Implementar OAuth com TikTok
@@ -443,3 +443,33 @@
 - [ ] Integração com RD Station
 - [ ] Integração com HubSpot
 - [ ] Integração com Pipedrive
+
+---
+
+## Fase 4: Job Scheduler e Sincronização Automática
+
+### Job Scheduler
+- [x] Implementar IntegrationSyncManager com cron job
+- [x] Configurar execução a cada 30 minutos
+- [x] Sincronizar Meta Ads automaticamente
+- [x] Sincronizar Google Ads automaticamente
+- [x] Criar página de monitoramento (SyncMonitor.tsx)
+- [x] Criar tRPC router para sincronizações (syncRouter)
+- [x] Implementar histórico de sincronizações
+- [x] Criar 23 testes vitest para job scheduler
+- [ ] Implementar persistência de dados no banco
+- [ ] Implementar retry com backoff exponencial
+- [ ] Adicionar notificações de erro
+
+### Monitoramento
+- [x] Criar página SyncMonitor com estatísticas
+- [x] Exibir status da última sincronização
+- [x] Exibir taxa de sucesso
+- [x] Exibir total de campanhas sincronizadas
+- [x] Exibir total de métricas sincronizadas
+- [x] Exibir duração média de sincronização
+- [x] Exibir estatísticas por plataforma
+- [x] Implementar botão de sincronização manual
+- [ ] Adicionar gráficos de tendência
+- [ ] Adicionar alertas de falha
+
