@@ -473,3 +473,19 @@
 - [ ] Adicionar gráficos de tendência
 - [ ] Adicionar alertas de falha
 
+
+
+## Fase 6: Sistema de Solicitações e Aprovações
+
+- [ ] Criar schema de solicitações (requests table)
+- [ ] Criar schema de aprovações (approvals table)
+- [ ] Criar tipos de solicitação (campaign change, budget adjustment, etc)
+- [ ] Criar estados de solicitação (pending, approved, rejected, cancelled)
+- [ ] Implementar serviço de solicitações (requestService.ts)
+- [ ] Implementar router tRPC para solicitações (requestRouter.ts)
+- [ ] Criar página de solicitações no portal (Requests.tsx)
+- [ ] Criar página de aprovações para admin (Approvals.tsx)
+- [ ] Implementar notificações de solicitação
+- [ ] Implementar notificações de aprovação/rejeição
+- [ ] Criar testes vitest para solicitações
+- [ ] Criar auditoria de solicitações

@@ -7,6 +7,7 @@ import { googleAdsRouter } from "./routers/googleAdsRouter";
 import { syncRouter } from "./routers/syncRouter";
 import { persistenceRouter } from "./routers/persistenceRouter";
 import { aiRouter } from "./routers/aiRouter";
+import { requestRouter } from "./routers/requestRouter";
 
 export const appRouter = router({
     // if you need to use socket.io, read and register route in server/_core/index.ts, all api should start with '/api/' so that the gateway can route correctly
@@ -26,6 +27,7 @@ export const appRouter = router({
   sync: syncRouter,
   persistence: persistenceRouter,
   ai: aiRouter,
+  requests: requestRouter,
 
   // TODO: add feature routers here, e.g.
   // todo: router({
