@@ -76,12 +76,15 @@
 - [ ] Criar página de integração no portal (MetaIntegration.tsx)
 
 ### Google Ads
-- [ ] Implementar OAuth com Google
-- [ ] Criar service para Google Ads API
-- [ ] Buscar campanhas
-- [ ] Buscar palavras-chave
-- [ ] Buscar performance
-- [ ] Implementar sincronização automática
+- [x] Implementar OAuth com Google (getAuthUrl, handleCallback, refreshToken)
+- [x] Criar service para Google Ads API (GoogleAdsService)
+- [x] Buscar campanhas (syncCampaigns)
+- [x] Buscar palavras-chave (getCampaignKeywords)
+- [x] Buscar performance (getCampaignMetrics, getAccountMetrics)
+- [x] Criar testes de conexão (googleAdsService.test.ts)
+- [ ] Implementar sincronização automática com job scheduler
+- [ ] Integrar com banco de dados (salvar campanhas e métricas)
+- [ ] Criar página de integração no portal (GoogleAdsIntegration.tsx)
 
 ### TikTok Ads
 - [ ] Implementar OAuth com TikTok
