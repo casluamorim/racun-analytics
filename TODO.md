@@ -3,8 +3,8 @@
 ## Fase 1: Fundação e Banco de Dados
 
 ### Banco de Dados e Schema
-- [ ] Criar schema completo em Drizzle (users, clients, leads, metrics, etc)
-- [ ] Configurar migrations
+- [x] Criar schema completo em Drizzle (users, clients, leads, metrics, etc)
+- [x] Configurar migrations
 - [ ] Criar indexes para performance
 - [ ] Implementar row-level security
 
@@ -15,26 +15,26 @@
 - [ ] Implementar verificação de permissões
 
 ### Site Público
-- [ ] Criar landing page com hero section
-- [ ] Implementar página de recursos
-- [ ] Implementar página de soluções
-- [ ] Implementar página de contato
-- [ ] Implementar formulário de agendamento
-- [ ] Adicionar FAQ
-- [ ] Adicionar prova social (testimonials)
-- [ ] Implementar design responsivo
+- [x] Criar landing page com hero section
+- [x] Implementar página de recursos
+- [x] Implementar página de soluções
+- [x] Implementar página de contato
+- [x] Implementar formulário de agendamento
+- [x] Adicionar FAQ
+- [x] Adicionar prova social (testimonials)
+- [x] Implementar design responsivo
 
 ---
 
 ## Fase 2: Portal Privado - Dashboards
 
 ### Dashboard Executivo
-- [ ] Criar layout base do portal
-- [ ] Implementar dashboard executivo com KPIs principais
-- [ ] Criar gráficos de investimento
-- [ ] Criar gráficos de resultado
-- [ ] Implementar alertas principais
-- [ ] Implementar últimas ações da IA
+- [x] Criar layout base do portal (PortalLayout com sidebar)
+- [x] Implementar dashboard executivo com KPIs principais
+- [x] Criar gráficos de investimento e conversões
+- [x] Criar gráficos de ROAS
+- [x] Implementar alertas principais (insights da IA)
+- [x] Implementar últimas ações da IA
 - [ ] Adicionar filtros por período
 
 ### Dashboard Técnico
@@ -46,13 +46,19 @@
 - [ ] Implementar diagnósticos detalhados
 - [ ] Adicionar modo apresentação
 
+### Módulos do Portal
+- [x] Página de Integrações (status de conexões, sincronização manual)
+- [x] Página de CRM com funil de vendas (novo, qualificado, demo, proposta, negociação)
+- [x] Página de Relatórios (histórico e próximos relatórios)
+- [x] Página de Configurações (perfil, relatórios, notificações, segurança)
+
 ---
 
 ## Fase 3: Integrações
 
 ### Central de Integrações
-- [ ] Criar página de integrações
-- [ ] Implementar status de conexões
+- [x] Criar página de integrações
+- [ ] Implementar status de conexões (conectado, erro, desconectado)
 - [ ] Criar botão de reconectar
 - [ ] Implementar sincronização manual
 - [ ] Criar logs de integração
@@ -176,8 +182,8 @@
 ## Fase 7: CRM Unificado
 
 ### Gestão de Leads
-- [ ] Criar página de CRM
-- [ ] Implementar lista de leads
+- [x] Criar página de CRM
+- [x] Implementar lista de leads
 - [ ] Implementar kanban de funil
 - [ ] Criar formulário de novo lead
 - [ ] Implementar edição de lead
@@ -185,12 +191,12 @@
 - [ ] Implementar histórico de interações
 
 ### Funil de Vendas
-- [ ] Implementar etapas do funil (novo, qualificado, demo, proposta, negociação, convertido, perdido)
+- [x] Implementar etapas do funil (novo, qualificado, demo, proposta, negociação, convertido, perdido)
 - [ ] Criar view kanban
-- [ ] Criar view lista
+- [x] Criar view lista
 - [ ] Implementar drag-and-drop entre etapas
 - [ ] Criar métricas do funil (conversão, tempo médio)
-- [ ] Implementar filtros avançados
+- [x] Implementar filtros avançados
 
 ### Automações de CRM
 - [ ] Criar lead automaticamente de formulários
@@ -287,6 +293,7 @@
 ## Fase 10: Relatórios e Notificações
 
 ### Relatórios Automáticos
+- [x] Criar página de relatórios
 - [ ] Criar job de relatório semanal (domingo 16:00)
 - [ ] Implementar geração de relatório
 - [ ] Criar conteúdo: resumo geral
@@ -352,7 +359,7 @@
 - [ ] Implementar sincronização inicial de dados
 
 ### Configurações do Cliente
-- [ ] Criar página de configurações
+- [x] Criar página de configurações
 - [ ] Implementar edição de dados básicos
 - [ ] Implementar toggle de relatórios
 - [ ] Implementar configuração de metas
@@ -431,4 +438,3 @@
 - [ ] Integração com RD Station
 - [ ] Integração com HubSpot
 - [ ] Integração com Pipedrive
-

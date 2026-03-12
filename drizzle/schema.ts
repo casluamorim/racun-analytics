@@ -7,22 +7,33 @@ import { int, mysqlEnum, mysqlTable, text, timestamp, varchar, decimal, boolean,
 export const users = mysqlTable("users", {
   id: int("id").autoincrement().primaryKey(),
   openId: varchar("openId", { length: 64 }).notNull().unique(),
-  clientId: int("clientId"),
   name: text("name"),
   email: varchar("email", { length: 320 }),
-  phone: varchar("phone", { length: 20 }),
   loginMethod: varchar("loginMethod", { length: 64 }),
-  role: mysqlEnum("role", ["user", "admin", "client"]).default("user").notNull(),
-  isActive: boolean("isActive").default(true).notNull(),
+  role: mysqlEnum("role", ["user", "admin"]).default("user").notNull(),
   createdAt: timestamp("createdAt").defaultNow().notNull(),
   updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
   lastSignedIn: timestamp("lastSignedIn").defaultNow().notNull(),
-}, (table) => ({
-  clientIdIdx: index("clientId_idx").on(table.clientId),
-}));
+});
 
 export type User = typeof users.$inferSelect;
 export type InsertUser = typeof users.$inferInsert;
+
+/**
+ * User-Client relationship for multi-tenant access
+ */
+export const userClients = mysqlTable("userClients", {
+  id: int("id").autoincrement().primaryKey(),
+  userId: int("userId").notNull(),
+  clientId: int("clientId").notNull(),
+  role: mysqlEnum("role", ["admin", "manager", "viewer"]).default("viewer").notNull(),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+}, (table) => ({
+  userClientIdx: index("userClient_idx").on(table.userId, table.clientId),
+}));
+
+export type UserClient = typeof userClients.$inferSelect;
+export type InsertUserClient = typeof userClients.$inferInsert;
 
 /**
  * Clients table - Multi-tenant support

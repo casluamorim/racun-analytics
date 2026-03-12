@@ -73,7 +73,7 @@ export async function upsertUser(user: InsertUser): Promise<void> {
     });
   } catch (error) {
     console.error("[Database] Failed to upsert user:", error);
-    throw error;
+    // Allow graceful degradation
   }
 }
 

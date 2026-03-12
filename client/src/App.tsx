@@ -8,15 +8,29 @@ import Home from "./pages/Home";
 import Resources from "./pages/Resources";
 import Solutions from "./pages/Solutions";
 import Schedule from "./pages/Schedule";
+import Dashboard from "./pages/portal/Dashboard";
+import Integrations from "./pages/portal/Integrations";
+import CRM from "./pages/portal/CRM";
+import Reports from "./pages/portal/Reports";
+import Settings from "./pages/portal/Settings";
 
 function Router() {
-  // Public routes
+  // Public and private routes
   return (
     <Switch>
+      {/* Public routes */}
       <Route path={"/"} component={Home} />
       <Route path={"/recursos"} component={Resources} />
       <Route path={"/solucoes"} component={Solutions} />
       <Route path={"/agendar"} component={Schedule} />
+
+      {/* Portal routes */}
+      <Route path={"/portal/dashboard"} component={Dashboard} />
+      <Route path={"/portal/integrations"} component={Integrations} />
+      <Route path={"/portal/crm"} component={CRM} />
+      <Route path={"/portal/reports"} component={Reports} />
+      <Route path={"/portal/settings"} component={Settings} />
+
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
