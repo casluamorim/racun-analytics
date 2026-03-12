@@ -1,0 +1,19 @@
+{
+  "query": "SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = DATABASE();",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 4JNusj3S25js7B9.root --database Bdqws5iMn9uMc4D62w5ZNY --execute SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = DATABASE();",
+  "rows": [
+    {
+      "TABLE_NAME": "users"
+    },
+    {
+      "TABLE_NAME": "aiInsights"
+    },
+    {
+      "TABLE_NAME": "__drizzle_migrations"
+    }
+  ],
+  "messages": [],
+  "stdout": "TABLE_NAME\nusers\naiInsights\n__drizzle_migrations\n",
+  "stderr": "",
+  "execution_time_ms": 56
+}
