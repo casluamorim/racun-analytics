@@ -66,12 +66,14 @@
 - [ ] Adicionar histórico de sincronizações
 
 ### Meta Ads
-- [ ] Implementar OAuth com Meta
-- [ ] Criar service para Meta Marketing API
-- [ ] Buscar campanhas
-- [ ] Buscar métricas (investimento, impressões, cliques, conversões, ROAS)
-- [ ] Implementar sincronização automática
-- [ ] Criar testes de conexão
+- [x] Implementar OAuth com Meta (getAuthUrl, handleCallback)
+- [x] Criar service para Meta Marketing API (MetaAdsService)
+- [x] Buscar campanhas (syncCampaigns)
+- [x] Buscar métricas (investimento, impressões, cliques, conversões, ROAS)
+- [x] Criar testes de conexão (metaAdsService.test.ts)
+- [ ] Implementar sincronização automática com job scheduler
+- [ ] Integrar com banco de dados (salvar campanhas e métricas)
+- [ ] Criar página de integração no portal (MetaIntegration.tsx)
 
 ### Google Ads
 - [ ] Implementar OAuth com Google

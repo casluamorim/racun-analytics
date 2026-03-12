@@ -13,6 +13,7 @@ import Integrations from "./pages/portal/Integrations";
 import CRM from "./pages/portal/CRM";
 import Reports from "./pages/portal/Reports";
 import Settings from "./pages/portal/Settings";
+import MetaIntegration from "./pages/portal/MetaIntegration";
 
 function Router() {
   // Public and private routes
@@ -27,6 +28,7 @@ function Router() {
       {/* Portal routes */}
       <Route path={"/portal/dashboard"} component={Dashboard} />
       <Route path={"/portal/integrations"} component={Integrations} />
+      <Route path={"/portal/integrations/meta"} component={MetaIntegration} />
       <Route path={"/portal/crm"} component={CRM} />
       <Route path={"/portal/reports"} component={Reports} />
       <Route path={"/portal/settings"} component={Settings} />
